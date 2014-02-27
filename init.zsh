@@ -112,3 +112,8 @@ zstyle -a ':prezto:load' pmodule 'pmodules'
 pmodload "$pmodules[@]"
 unset pmodules
 
+export PATH="/Applications/dart/dart-sdk/bin:/Users/daniel/tools/androidsdk/tools:/Users/daniel/tools/androidsdk/platform-tools:/Users/daniel/bin:/Users/daniel/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export MANPATH="/usr/local/man:$MANPATH"
+
+source ~/.nvm/nvm.sh
+source ~/.datasplice_env
