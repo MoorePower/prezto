@@ -13,13 +13,22 @@ if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
 
+# Enable color in grep
+export GREP_OPTIONS='--color=auto'
+export GREP_COLOR='3;33'
+
 #
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='subl -w'
+export VISUAL='vim'
 export PAGER='less'
+
+# Setup terminal, and turn on colors
+export TERM=xterm-256color
+export CLICOLOR=1
+export LSCOLORS=Gxfxcxdxbxegedabagacad
 
 #
 # Language
@@ -44,6 +53,15 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  /Applications/dart/dart-sdk/bin
+  /Applications/Sublime\ Text.app/Contents/SharedSupport/bin
+  /Users/daniel/bin
+  /Users/daniel/tools/androidsdk/tools
+  /Users/daniel/tools/androidsdk/platform-tools
+  /Users/daniel/.rbenv/shims
+  /usr/{bin,sbin}
+  /bin
+  /sbin
   $path
 )
 
