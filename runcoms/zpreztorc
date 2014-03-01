@@ -41,7 +41,8 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'ssh' \
-  'prompt'
+  'prompt' \
+  'gulp-completion'
 
 #
 # Editor
