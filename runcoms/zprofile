@@ -55,6 +55,7 @@ path=(
   /usr/local/{bin,sbin}
   /Applications/dart/dart-sdk/bin
   /Applications/Sublime\ Text.app/Contents/SharedSupport/bin
+  /Applications/Google\ Chrome.app/Contents/MacOS
   /Users/daniel/bin
   /Users/daniel/tools/androidsdk/tools
   /Users/daniel/tools/androidsdk/platform-tools
