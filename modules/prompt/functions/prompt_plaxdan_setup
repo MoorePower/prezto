@@ -13,13 +13,15 @@ pmodload 'helper'
 
 function prompt_plaxdan_pwd {
   local pwd="${PWD/#$HOME/~}"
+  _prompt_plaxdan_pwd="$pwd"
 
-  if [[ "$pwd" == (#m)[/~] ]]; then
-    _prompt_plaxdan_pwd="$MATCH"
-    unset MATCH
-  else
-    _prompt_plaxdan_pwd="${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}/${pwd:t}"
-  fi
+  # Don't squash the path
+  # if [[ "$pwd" == (#m)[/~] ]]; then
+  #   _prompt_plaxdan_pwd="$MATCH"
+  #   unset MATCH
+  # else
+  #   _prompt_plaxdan_pwd="${${${(@j:/:M)${(@s:/:)pwd}##.#?}:h}%/}/${pwd:t}"
+  # fi
 }
 
 function prompt_plaxdan_precmd {
