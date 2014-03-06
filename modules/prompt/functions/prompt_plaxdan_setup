@@ -53,7 +53,7 @@ function prompt_plaxdan_setup {
   # %v - Node.js version.
   # zstyle ':prezto:module:node:info:version' format '%F{green}⬡ %F{white}%v'
   # zstyle ':prezto:module:node:info:version' format '%F{green}node:%v'
-  zstyle ':prezto:module:node:info:version' format '%F{white}node:%F{green}%v'
+  zstyle ':prezto:module:node:info:version' format '%F{blue}node%F{white}:%F{green}%v'
 
   # Set editor-info parameters.
   zstyle ':prezto:module:editor:info:completing' format '%B%F{red}...%f%b'
