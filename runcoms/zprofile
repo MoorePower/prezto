@@ -10,7 +10,7 @@
 #
 
 if [[ "$OSTYPE" == darwin* ]]; then
-  export BROWSER='open'
+  export BROWSER='chrome'
 fi
 
 # Enable color in grep

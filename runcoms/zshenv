@@ -14,3 +14,4 @@ fi
 export DS5PROXY_HOST='10.255.255.20'
 export DS5PROXY_PORT='4180'
 ulimit -n 1024
+alias ds='echo $DS5PROXY_HOST:$DS5PROXY_PORT'
